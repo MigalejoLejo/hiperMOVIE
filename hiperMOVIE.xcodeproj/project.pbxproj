@@ -46,7 +46,6 @@
 		49207F802A5ECE50005F5FE7 /* LottieView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49207F7D2A5ECE50005F5FE7 /* LottieView.swift */; };
 		49207F822A5EEDC7005F5FE7 /* ResultsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49207F812A5EEDC7005F5FE7 /* ResultsTableViewCell.swift */; };
 		49207F872A5EF1CB005F5FE7 /* CardCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49207F852A5EF1CB005F5FE7 /* CardCollectionViewCell.swift */; };
-		49207F882A5EF1CB005F5FE7 /* CollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 49207F862A5EF1CB005F5FE7 /* CollectionViewCell.xib */; };
 		49207F8B2A5EF437005F5FE7 /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = 49207F8A2A5EF437005F5FE7 /* Kingfisher */; };
 /* End PBXBuildFile section */
 
@@ -88,7 +87,6 @@
 		49207F7D2A5ECE50005F5FE7 /* LottieView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LottieView.swift; sourceTree = "<group>"; };
 		49207F812A5EEDC7005F5FE7 /* ResultsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultsTableViewCell.swift; sourceTree = "<group>"; };
 		49207F852A5EF1CB005F5FE7 /* CardCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardCollectionViewCell.swift; sourceTree = "<group>"; };
-		49207F862A5EF1CB005F5FE7 /* CollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CollectionViewCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -130,7 +128,6 @@
 			isa = PBXGroup;
 			children = (
 				49207F5D2A5DB363005F5FE7 /* Models */,
-				49207FAC2A667236005F5FE7 /* xibs */,
 				49207F5C2A5DB359005F5FE7 /* Views */,
 				49207EFD2A5DAF86005F5FE7 /* AppDelegate.swift */,
 				49207EFF2A5DAF86005F5FE7 /* SceneDelegate.swift */,
@@ -239,14 +236,6 @@
 			path = "Lottie+Animations";
 			sourceTree = "<group>";
 		};
-		49207FAC2A667236005F5FE7 /* xibs */ = {
-			isa = PBXGroup;
-			children = (
-				49207F862A5EF1CB005F5FE7 /* CollectionViewCell.xib */,
-			);
-			path = xibs;
-			sourceTree = "<group>";
-		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -321,7 +310,6 @@
 			files = (
 				49207F0A2A5DAF87005F5FE7 /* LaunchScreen.storyboard in Resources */,
 				49207F7E2A5ECE50005F5FE7 /* action.json in Resources */,
-				49207F882A5EF1CB005F5FE7 /* CollectionViewCell.xib in Resources */,
 				49207F072A5DAF87005F5FE7 /* Assets.xcassets in Resources */,
 				49207F052A5DAF86005F5FE7 /* Main.storyboard in Resources */,
 				49207F7F2A5ECE50005F5FE7 /* loading.json in Resources */,

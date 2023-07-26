@@ -10,18 +10,15 @@ import Kingfisher
 
 class CardCollectionViewCell: UICollectionViewCell {
     
-    @IBOutlet  var image: UIImageView!
-    @IBOutlet  var title: UILabel!
-    @IBOutlet  var subtitle: UILabel!
+    @IBOutlet weak var image: UIImageView!
+    @IBOutlet weak var title: UILabel!
+    @IBOutlet weak var subtitle: UILabel!
     
     
 
     func configure (result:Result) {
-        // TODO: check if this works
-        
-        
-        
-       title.text = result.title
+        title.text = result.title
+        image.load(url:URL(string: Env.image_url+"/w500"+result.image) )
 //        self.subtitleLabel.text = result.subtitle
     }
     
@@ -36,4 +33,19 @@ class CardCollectionViewCell: UICollectionViewCell {
         // Initialization code
     }
 
+}
+
+extension UIImageView {
+    func load(url: URL?) {
+        DispatchQueue.global().async { [weak self] in
+            guard let url = url else {return}
+            if let data = try? Data(contentsOf: url) {
+                if let image = UIImage(data: data) {
+                    DispatchQueue.main.async {
+                        self?.image = image
+                    }
+                }
+            }
+        }
+    }
 }
